@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/style/style.css" type="text/css" />
+    <title>DragonBall Z</title>
+  </head>
+  <body>
+    <div class="col-md-12 text-center position-absolute mt-5 gameover">
+      <h2>Game Over</h2>
+      <h3 class="ending">You lose</h3>
+    </div>
+    <div class="container ">
+      <div class="row justify-content-center text-center mt-2">
+        <div
+          class="col-md-2 health health-bar-hero rounded p-2 position-absolute"
+        >
+          <h3 class="health-hero ">
+            Hero HP:
+            <h3 class="healthpoints-hero"></h3>
+          </h3>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-5 mb-5"></div>
+    <div class="row mt-5 mb-5"></div>
+    <div class="container-fluid">
+      <div class="row bg-dark mt-5 pt-3 pb-3 backdrop1">
+        <div class="container">
+          <h2 class="float-left mt-5">Heroes</h2>
+          <div
+            id="goku"
+            class="col-md-2 rounded mx-3 float-right pic heroes"
+            health="800"
+            attack="30"
+          ></div>
+
+          <div
+            id="gohan"
+            class="col-md-2 rounded mx-3 float-right pic heroes"
+            health="720"
+            attack="25"
+          ></div>
+          <div
+            id="trunks"
+            class="col-md-2 rounded mx-3 float-right pic heroes"
+            health="650"
+            attack="22"
+          ></div>
+          <div
+            id="vegeta"
+            class="col-md-2 rounded mx-3 float-right pic heroes"
+            health="790"
+            attack="28"
+          ></div>
+        </div>
+      </div>
+      <div class=" fight position-absolute rounded p-2"><h3>Fight</h3></div>
+    </div>
+    <div class="row bg-dark pt-3 pb-3">
+      <div class="container justify-content-start backdrop2">
+        <div
+          id="broly"
+          class="col-md-2 rounded mx-3 float-left pic villains"
+          health="730"
+          attack="55"
+        ></div>
+        <div
+          id="freeza"
+          class="col-md-2 rounded mx-3 float-left pic villains"
+          health="650"
+          attack="45"
+        ></div>
+        <div
+          id="cell"
+          class="col-md-2 rounded mx-3 float-left pic villains"
+          health="600"
+          attack="60"
+        ></div>
+        <div
+          id="boo"
+          class="col-md-2 rounded mx-3 float-left pic villains"
+          health="620"
+          attack="65"
+        ></div>
+        <h2 class="float-right mt-5">Villains</h2>
+      </div>
+    </div>
+    <div class="container ">
+      <div class="row justify-content-center text-center mt-5">
+        <div
+          class="col-md-2 health-bar-villain health rounded p-2 position-absolute"
+        >
+          <h3 class="health-villain">
+            Villain HP:
+            <h3 class="healthpoints-villain"></h3>
+          </h3>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/javascript/main.js"></script>
+  </body>
+</html>
