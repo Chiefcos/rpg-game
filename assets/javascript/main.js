@@ -87,6 +87,8 @@ $(".fight").on("click", function() {
     alert("Game Over");
     $(".health-bar-hero").hide();
     $(".gameover").show();
+    $(".fight").hide();
+    $(".health-bar-villain").hide();
   }
 
   // when you win you can chose the next enemy
